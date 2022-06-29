@@ -16,6 +16,7 @@ public class splash_screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
+
         progress_bar = findViewById(R.id.progress_bar);
 
         final Animation progress_bar_anim = AnimationUtils.loadAnimation(this, R.anim.progress_bar_anim);
@@ -24,7 +25,7 @@ public class splash_screen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent mainIntent = new Intent(splash_screen.this, MainActivity.class);
+                Intent mainIntent = new Intent(splash_screen.this, Main.class);
                 splash_screen.this.startActivity(mainIntent);
                 splash_screen.this.finish();
             }

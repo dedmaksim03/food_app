@@ -8,7 +8,7 @@
     android:layout_height="fill_parent"
     android:elevation="40dp"
     android:background="@drawable/image_1"
-    tools:context=".MainActivity">
+    tools:context=".onboardingscreen">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
